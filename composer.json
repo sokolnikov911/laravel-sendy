@@ -27,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Micovi\\LaravelSendy\\": "src"
+      "sokolnikov911\\LaravelSendy\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Micovi\\LaravelSendy\\Tests\\": "tests"
+      "sokolnikov911\\LaravelSendy\\Tests\\": "tests"
     },
     "files": [
       "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
