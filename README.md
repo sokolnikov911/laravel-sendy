@@ -11,7 +11,7 @@ Package description: Laravel simple integration with Sendy API to subscribe/unsu
 Install via composer
 
 ```bash
-composer require micovi/laravel-sendy
+composer require sokolnikov911/laravel-sendy
 ```
 
 ### Register Service Provider
@@ -22,7 +22,7 @@ with package auto discovery feature.**
 Add service provider to `config/app.php` in `providers` section
 
 ```php
-Micovi\LaravelSendy\ServiceProvider::class,
+sokolnikov911\LaravelSendy\ServiceProvider::class,
 ```
 
 ### Register Facade
@@ -30,7 +30,7 @@ Micovi\LaravelSendy\ServiceProvider::class,
 Register package facade in `config/app.php` in `aliases` section
 
 ```php
-'LaravelSendy' => Micovi\LaravelSendy\Facades\LaravelSendy::class,
+'LaravelSendy' => sokolnikov911\LaravelSendy\Facades\LaravelSendy::class,
 ```
 
 ### Add env variables
@@ -50,7 +50,7 @@ LIST ID can be found encrypted & hashed in View all lists section under the colu
 You can publish configuration file to edit the variables, in case you don't want to use ENV. File will pe published in `/config/larave-sendy.php`
 
 ```bash
-php artisan vendor:publish --provider="Micovi\LaravelSendy\ServiceProvider" --tag="config"
+php artisan vendor:publish --provider="sokolnikov911\LaravelSendy\ServiceProvider" --tag="config"
 ```
 
 ### Publish translations
@@ -64,7 +64,7 @@ You can publish translations to edit them. Files will be published in `/resource
 Before any usage add Namespace to file.
 
 ```php
-use Micovi\LaravelSendy\LaravelSendy;
+use sokolnikov911\LaravelSendy\LaravelSendy;
 ```
 
 ### Subscribe
