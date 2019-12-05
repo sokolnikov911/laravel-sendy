@@ -1,9 +1,9 @@
 <?php
 
-namespace Micovi\LaravelSendy\Tests;
+namespace sokolnikov911\LaravelSendy\Tests;
 
-use Micovi\LaravelSendy\Facades\LaravelSendy;
-use Micovi\LaravelSendy\ServiceProvider;
+use sokolnikov911\LaravelSendy\Facades\LaravelSendy;
+use sokolnikov911\LaravelSendy\ServiceProvider;
 use Orchestra\Testbench\TestCase;
 
 class LaravelSendyTest extends TestCase

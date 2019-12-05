@@ -5,7 +5,7 @@ namespace sokolnikov911\LaravelSendy;
  * PHP interface for Sendy api
  *
  * @author Ovidiu Miclea <micleaovidiul@gmail.com>
- * @package micovi/laravel-sendy
+ * @package sokolnikov911/laravel-sendy
  */
 class LaravelSendy
 {
