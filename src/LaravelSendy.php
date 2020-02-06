@@ -137,6 +137,33 @@ class LaravelSendy
         return $return;
     }
 
+    public function subscribtionStatus($email, $listId = null, $json = false)
+    {
+        if (!self::isEmailValid($email))
+            throw new Exception\InvalidEmailException($email);
+
+        if ($listId == null)
+            $listId = $this->_listId;
+
+        $request = array(
+            'email' => $email,
+            'list' => $listId,
+            'boolean' => 'true',
+            'api_key' => $this->_getApiKey()
+        );
+
+        $response = $this->_callSendy(self::URI_SUBSCRIPTION_STATUS, $request);
+
+        $return = [
+            'success' => true,
+            'message' => $response
+        ];
+
+        if ($json == true)
+            return json()->response($return);
+
+        return $return;
+    }
 
     public function delete($email, $listId = null, $json = false)
     {
