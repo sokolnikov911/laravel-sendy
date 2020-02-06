@@ -137,7 +137,7 @@ class LaravelSendy
         return $return;
     }
 
-    public function subscribtionStatus($email, $listId = null, $json = false)
+    public function subscriptionStatus($email, $listId = null, $json = false)
     {
         if (!self::isEmailValid($email))
             throw new Exception\InvalidEmailException($email);
@@ -147,8 +147,7 @@ class LaravelSendy
 
         $request = array(
             'email' => $email,
-            'list' => $listId,
-            'boolean' => 'true',
+            'list_id' => $listId,
             'api_key' => $this->_getApiKey()
         );
 
